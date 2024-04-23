@@ -27,19 +27,19 @@ By:
         <a href="https://www.microsoft.com/en-us/power-platform/products/power-bi" >
           <img src="Images/1024px-New_Power_BI_Logo.svg.png" width="48" height="48" alt="Power BI" />
         </a>
-        <br>Tableau 
+        <br>Power BI 
       </td>
       <td align="center" width="96">
         <a href="https://flask.palletsprojects.com/en/3.0.x/" >
           <img src="./Images/kisspng-flask-by-example-web-framework-python-bottle-sebastian-estenssoro-5b6c0aa33b3b57.9170119715338072672426.jpg" width="48" height="48" alt="Flask" />
         </a>
-        <br> Scikit Learn
+        <br> Flask
       </td>
       <td align="center" width="96">
         <a href="https://www.sqlite.org/" >
           <img src="./Images/kisspng-sqlite-database-android-mysql-sqlite-logo-svg-vector-amp-png-transparent-vec-5b7f52d603afe4.2282938415350709340151.jpg" width="48" height="48" alt="SQL Lite" />
         </a>
-        <br> Prophet
+        <br> SQLLite
       </td>
     </tr>
   </table>
