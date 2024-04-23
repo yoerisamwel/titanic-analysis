@@ -47,8 +47,8 @@ By:
 
 ## Overview
 The purpose of this project is to:
-  - **Understand Regional Market** and **Enhance Personalization:** By analyzing past purchase history,  understand the unique characteristics, preferences, and behaviors of customers in different geographic areas. 
-  - **Identify Growth Opportunities:** identify trends and patterns in sales performance, and market demand.
+  - **Practice reporting skills** and **Practice data analytical skilss:** By analysing the passenger agegroups that were on the Titanic and working with the dataset. 
+  - **Loading and storing data:** identify trends and patterns in sales performance, and market demand.
   - **Understanding Seasonal Influences:** understand how seasonal factors, and local events impact consumer behavior and purchasing patterns in different regions.
 
 > **Note:**
