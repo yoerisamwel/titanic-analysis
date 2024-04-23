@@ -48,111 +48,36 @@ By:
 ## Overview
 The purpose of this project is to:
   - **Practice reporting skills** and **Practice data analytical skilss:** By analysing the passenger agegroups that were on the Titanic and working with the dataset. 
-  - **Loading and storing data:** identify trends and patterns in sales performance, and market demand.
-  - **Understanding Seasonal Influences:** understand how seasonal factors, and local events impact consumer behavior and purchasing patterns in different regions.
-
-> **Note:**
-> we got our data from [Kaggle](https://www.kaggle.com/datasets/dkhalidashik/superstore-furniture-sales)
->
+  - **Loading and storing data:** Loading and storing data in SQLLite.
+  - **Flask API:** Added a script that allows a use to pull data from the database by using an API.
 
 
 ## Visualizations
-For some insights into our dataset, feel free to check our visualization dashboard at [Tableau Public](https://public.tableau.com/app/profile/alaa.al.eryani/viz/Ecommerce_17070771557310/ProfitDashboard)
+For insight into the datset please look at the Power BI dashboard. 
 
 ## Analysis
 
-We used three machine learning models:
-  - **Model 1:** [Linear Regression](https://github.com/alaa-aleryani/Final_Project/blob/main/Analysis/Linear_Regression.ipynb) 
-  - **Model 2:** [Ridge Regression](https://github.com/alaa-aleryani/Final_Project/blob/main/Analysis/Linear_Regression.ipynb)  
-  - **Model 3:** [Time Series Forecasts using Facebook's Prophet.](https://github.com/alaa-aleryani/Final_Project/blob/main/Analysis/Sales_TimeSeries_Prediction_Prophet.ipynb)
-  
-
-## Results 📈 📉
-
-
-<!-- Hidden Pictures -->
-<!-- Model 1 -->
-
-<details>
-<summary><b> Model 1 👇:</b></summary>
-  
-Our first step in the analysis used a `Linear Regression` model to predict the Original Price by looking at various factors. We chose this model for its simplicity and ease of understanding. It helped us see how different variables influence the price. Although it's straightforward to use, the model's accuracy score of 64% in our tests shows it's not entirely accurate. This result suggests that we might need to consider more advanced methods in future to improve our predictions.
-
-  <img width="674" alt="Model 1 Result" src="./Images/regression_fit_plot_model_1.png"> <br>
-
-This graph visualizes the `linear regression` model's predictions, showing how the target variable (e.g., 'Original_Price') changes as a function of the 'Quantity' feature, alongside actual data points for comparison.
-
-</details>
-
-
-<!-- Model 2 -->
-
-<details>
-<summary><b> Model 2 👇:</b></summary>
-
-The `Ridge Regression` model showed exceptionally high performance on the test data for predicting the Original Price, with an almost negligible error (MAE) of 0.0007296897175481192 and a nearly perfect score (R²) of 0.9999999999955044. However, these near-perfect results suggest the possibility of overfitting, where the model might have learned the training data too closely, including its noise and outliers, rather than capturing the underlying pattern. This concern arises because models that perform too well on the training data often struggle to generalize to new, unseen data, leading to less accurate predictions in real-world scenarios. While the model's high accuracy initially appears impressive, it raises questions about its ability to perform consistently across different datasets. 
-  
-  <img width="676" alt="Model 2 Result" src="./Images/regression_fit_plot_model_2.png"> <br>
-
-This graph illustrates the `Ridge Regression` model's predictions, demonstrating the relationship between the target variable (e.g., 'Original_Price') and the 'Quantity' feature, juxtaposed with actual data points for contextual comparison.
-  
-</details>
-
-
-<!-- Model 3 -->
-
-<details>
-<summary><b> Model 3 👇:</b></summary>
-  
-For the last model we used `Time Series Forecast` using Facebook's open source library `Prophet`, which was released as an open source on February 2017. We chose this model for its ease of use and because it automatically handles missing data, outliers, and holidays. However, because of it's limited features it may not be effective for many forecasting tasks.
-
-  <details>
-  <summary><b> Forecasting graph:</b></summary>
-    <img width="668" alt="Model 3 Result1" src="./Images/Sales_Forecasting_Prophet.png"> <br>
-  This graph illustrates a one year sales forecast based on historical data. Giving us a trend with the averages and a high and low amounts that we could expect. 
-  </details>
-
-
-  <details>
-  <summary><b> Trend graph:</b></summary>
-    <img width="668" alt="Model 3 Result2" src="./Images/forecast_sales_trend.png"> <br>
-  In this trend graph, we could see that the trend line demonstrates a subtle decline with a high level of certainity for the first couple of months. Then the uncertainity boundries increases over time.
-  </details>
-
-  <details>
-  <summary><b> Seasonality trend graph:</b></summary>
-    <img width="668" alt="Model 3 Result3" src="./Images/Seasonality_forecast_Prophet.png"> <br>
-  For the daily trend, we see that tuesdays are the high days and wednesdays are the low days. 
-  For the yearly trend, we see that February tend to have the highest sales. Then comes April then August.
-  </details>
-
-</details>
-
+I added the data into an SQLLite database. I installed the odbc driver to enable me to use this databse with Power BI. I then explored the data using SQLAlchemy. The next step was loading the data using SQLAlchemy into a pandas dataframe allowing me to run some analysis and create a profile report for the dataset. I then loaded a second passenger list into the datbase and joined the two to complete some missing data. I then developed an analysis in Power BI using Power Query and DAX to process the data and group the data to gain better insights into the agegroups that were present on the Titanic. I then also created an Flask app that allows a use to pull data from the SQLLite server using an API. 
 
 ## Summary
 
-This project aimed to explore how different regions have their own unique shopping trends and customer behaviors. The main goal was to figure out what makes each area different, spot where there might be chances to sell more, and make shopping more tailored and enjoyable for customers. By looking at what people have bought in the past, the project tried to help businesses offer more of what customers in specific regions like. It also looked into how changes in seasons or local events affect what people buy in different places.
+In my Titanic passenger analysis project, I embarked on a journey to sharpen my reporting and data analytical skills. Leveraging a combination of Python, Jupyter Notebook, Power BI, and Flask, I delved into the demographics of Titanic passengers with curiosity and rigor.
 
-To do this, we used three types of computer programs or models. The first model was a simple one that tried to predict prices based on other information we know. The second model was a bit more complex and made sure we didn't rely too much on just one piece of information, making our predictions more reliable. The third model was special for looking at how things change over time, like predicting how sales might go up or down during different times of the year. We also made a special online page where anyone can see our findings in a clear and interactive way, making it easier to understand what we found out.
+The project kicked off with the creation of an SQLLite database, where I meticulously stored and managed the Titanic passenger data. This foundational step laid the groundwork for the subsequent analyses, ensuring data integrity and accessibility throughout the project.
 
-In conclusion, our analysis has provided valuable insights into regional purchasing behaviors, offering a foundational understanding for businesses aiming to tailor their strategies to diverse geographical markets. However, integrating profitability metrics for individual products and categories emerges as a compelling direction for future research. By adopting a more granular approach towards category-specific profitability, businesses could gain a deeper understanding of financial performance across different regions. This refined analysis would not only illuminate top-selling products but also highlight those contributing most significantly to revenue. Consequently, such an approach would enable businesses to craft more nuanced strategies, prioritizing not just volume of sales but also optimizing for higher profit margins.
+Using SQLAlchemy, I navigated through the dataset, extracting insights and generating a comprehensive profile report. This initial exploration provided invaluable insights into the characteristics of the data and set the stage for deeper analyses.
+
+A pivotal aspect of the project involved enriching the dataset by integrating additional passenger data into the database. This meticulous process of data augmentation enabled me to address any missing information and ensure the completeness and accuracy of my analyses.
+
+With the data primed and ready, I turned my attention to developing a Power BI dashboard. Leveraging the power of Power Query and DAX, I crafted interactive visualizations and insightful analyses that brought the demographics of Titanic passengers to life. The dashboard served as a captivating narrative of the age groups present onboard, offering valuable insights into this historic voyage.
+
+Furthermore, I extended the project's reach by implementing a Flask API, empowering users to access the Titanic passenger data directly from the SQLLite database. This seamless integration enhanced the project's accessibility and opened doors for further exploration and utilization of the dataset.
+
+In summary, my Titanic passenger analysis project exemplifies a holistic approach to data analysis, blending technical expertise with a curious investigative mindset. Through meticulous data management, insightful visualization, and user-friendly API implementation, the project not only deepened my understanding of Titanic passenger demographics but also showcased the versatility and power of modern data analysis techniques.
 
 ---
 
 ### Contact Info:
-
-<details>
-<summary><b> Alaa Aleryani:</b></summary>   <br>
-  <a href="mailto:alaaaleryani31@gmail.com">
-    <img align="left" alt="Alaa's email" width="25px" height="25"
-      src="https://cdn1.iconfinder.com/data/icons/google-new-logos-1/32/gmail_new_logo-256.png">
-  </a> 
-  <a href="https://www.linkedin.com/in/alaa-aleryani-6183a121b/"> 
-    <img align="left" alt="Alaa's LinkedIn Page" width="25px" height="25"
-      src="https://cdn2.iconfinder.com/data/icons/social-media-with-original-colors/256/icon-linkedin.png">
-</a>
-</details>
-
 
 <br>
 
