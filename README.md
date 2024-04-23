@@ -13,31 +13,31 @@ By:
     <tr>
       <td align="center" width="96">
         <a href="http://python.org">
-          <img src="./Images/python-original.svg" width="48" height="48" alt="Python" />
+          <img src="./Images/python-logo-only.png" width="48" height="48" alt="Python" />
         </a>
         <br>Python
       </td>
       <td align="center" width="96">
         <a href="https://jupyter.org/" >
-          <img src="./Images/jupyter-logo.svg" width="48" height="48" alt="Jupyter Notebook" />
+          <img src="./Images/Jupyter_logo.svg" width="48" height="48" alt="Jupyter Notebook" />
         </a>
         <br>Jupyter Notebook
       </td>
       <td align="center" width="96">
-        <a href="https://public.tableau.com/app/discover" >
-          <img src="Images/tableau.png" width="48" height="48" alt="Tableau" />
+        <a href="https://www.microsoft.com/en-us/power-platform/products/power-bi" >
+          <img src="Images/1024px-New_Power_BI_Logo.svg" width="48" height="48" alt="Power BI" />
         </a>
         <br>Tableau 
       </td>
       <td align="center" width="96">
-        <a href="https://scikit-learn.org/stable/" >
-          <img src="./Images/scikitlearn.png" width="48" height="48" alt="scikit learn" />
+        <a href="https://flask.palletsprojects.com/en/3.0.x/" >
+          <img src="./Images/kisspng-flask-by-example-web-framework-python-bottle-sebastian-estenssoro-5b6c0aa33b3b57.9170119715338072672426.jpeg" width="48" height="48" alt="Flask" />
         </a>
         <br> Scikit Learn
       </td>
       <td align="center" width="96">
-        <a href="https://facebook.github.io/prophet/docs/quick_start.html" >
-          <img src="./Images/prophet.png" width="48" height="48" alt="Time Series Forecast" />
+        <a href="https://www.sqlite.org/" >
+          <img src="./Images/kisspng-sqlite-database-android-mysql-sqlite-logo-svg-vector-amp-png-transparent-vec-5b7f52d603afe4.2282938415350709340151.jpeg" width="48" height="48" alt="SQL Lite" />
         </a>
         <br> Prophet
       </td>
