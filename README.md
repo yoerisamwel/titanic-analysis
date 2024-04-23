@@ -49,7 +49,7 @@ By:
 The purpose of this project is to:
   - **Practice reporting skills** and **Practice data analytical skilss:** By analysing the passenger agegroups that were on the Titanic and working with the dataset. 
   - **Loading and storing data:** Loading and storing data in SQLLite.
-  - **Flask API:** Added a script that allows a use to pull data from the database by using an API.
+  - **Flask API:** Developed a Flask App that allows a consumer to pull data from the database by using an API.
 
 
 ## Visualizations
