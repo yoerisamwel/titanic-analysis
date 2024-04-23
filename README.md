@@ -53,7 +53,11 @@ The purpose of this project is to:
 
 
 ## Visualizations
-The Power BI dashboard offers a visually engaging overview of Titanic passenger demographics. Through intuitive charts and graphs, viewers can explore age group distributions, gender demographics, and temporal trends. Interactive features allow for customized analyses, providing insights into the composition of passengers and their journey aboard the Titanic.
+In the Power BI dashboard, I created multiple tabs using bookmarks and buttons to organize the analysis effectively. Each tab focuses on a specific aspect of Titanic passenger demographics, such as age group distributions, gender demographics, and temporal trends.
+
+Using Power Query and DAX, I expanded the analysis to provide deeper insights into the composition of passengers and their journey aboard the Titanic. Power Query enabled me to clean and transform the data, while DAX allowed for complex calculations and custom measures to enhance the visualizations and uncover meaningful patterns.
+
+Overall, the Power BI dashboard offers an interactive and comprehensive exploration of Titanic passenger demographics, thanks to its intuitive design, interactive features, and the utilization of advanced analytical techniques.
 
 ## Analysis
 
